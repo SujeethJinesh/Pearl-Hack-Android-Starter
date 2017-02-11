@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.example.admin.mypearlprofile.MainActivity">
+
+        <TextView
+            android:text="Fluffy Taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/maxresdefault"
+            android:id="@+id/imageView2"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Put your status here!"
+            android:ems="10"
+            android:id="@+id/post_status_text" />
+
+        <Button
+            android:text="Post Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_status_button"
+            android:onClick="writeDatabase"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Put your email to me here!"
+            android:ems="10"
+            android:id="@+id/email_edit_text" />
+
+        <Button
+            android:text="Email Me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_button" />
+
+        <Button
+            android:text="My Facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebook_button" />
+
+    </LinearLayout>
+
+</ScrollView>
